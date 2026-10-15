@@ -1,5 +1,14 @@
-// Placeholder. The real CLI is specified in README.md and built by a cloud agent.
+use clap::Parser;
+use gcd_cli::gcd;
+
+#[derive(Parser)]
+#[command(name = "gcd", about, version)]
+struct Args {
+    a: i64,
+    b: i64,
+}
+
 fn main() {
-    eprintln!("gcd: not implemented yet (see README.md)");
-    std::process::exit(2);
+    let args = Args::parse();
+    println!("{}", gcd(args.a, args.b));
 }
