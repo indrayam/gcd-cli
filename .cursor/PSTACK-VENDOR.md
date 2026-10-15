@@ -7,6 +7,7 @@ Layout:
 - pstack/skills/*  -> .cursor/skills/*   (project skills; cloud agents read these from the repo)
 - pstack/agents/*  -> .cursor/agents/*   (project subagents: poteto-agent, comment-sicko)
 - pstack/docs/guide -> .cursor/docs/guide (keeps poteto-help's ../../docs/guide links valid)
+- pstack/README.md -> .cursor/README.md (keeps poteto-help's ../../README.md link valid)
 
 Why: on a Cursor cloud VM the pstack plugin was not present under ~/.cursor/plugins/, and /poteto-mode was not recognized.
 Known gap: agents/poteto-agent.md falls back to searching ~/.cursor/plugins/ when it gets no path. poteto-mode tells the parent to always pass the absolute path to .cursor/skills/poteto-mode/SKILL.md, so the fallback should not be needed.
