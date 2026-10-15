@@ -16,6 +16,24 @@ $ gcd 0 5
 $ gcd 0 0
 0
 $ gcd --help
+Print the greatest common divisor of two integers
+
+Usage: gcd <A> <B>
+
+Arguments:
+  <A>
+  <B>
+
+Options:
+  -h, --help  Print help
+
+Examples:
+  gcd 12 18
+  gcd -- -48 18
+$ gcd 12 18
+6
+$ gcd -- -48 18
+6
 ```
 
 - Two positional arguments `A` and `B`, parsed as signed 64-bit integers (`i64`). Negative numbers need `--` before them, as shown above.
