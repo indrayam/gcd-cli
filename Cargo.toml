@@ -1,0 +1,12 @@
+[package]
+name = "gcd-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Print the greatest common divisor of two integers"
+license = "MIT"
+
+[[bin]]
+name = "gcd"
+path = "src/main.rs"
+
+[dependencies]
