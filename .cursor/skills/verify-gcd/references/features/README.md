@@ -2,6 +2,7 @@
 
 | Feature | How a user reaches it | Expected |
 |---|---|---|
+| help examples | `gcd 12 18` | stdout `6`, exit 0 |
 | basic gcd | `gcd 48 18` | stdout `6`, exit 0 |
 | coprime | `gcd 17 5` | `1`, exit 0 |
 | one zero | `gcd 0 5` | `5`, exit 0 |

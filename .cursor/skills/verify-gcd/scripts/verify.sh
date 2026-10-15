@@ -15,6 +15,7 @@ check() { # expected_stdout expected_exit args...
     echo "FAIL gcd $* -> '${out}' exit=$code (want '${want_out}' exit=$want_code)"; fail=1
   fi
 }
+check 6 0 12 18
 check 6 0 48 18
 check 1 0 17 5
 check 5 0 0 5
